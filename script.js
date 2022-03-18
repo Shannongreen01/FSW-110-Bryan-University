@@ -1,16 +1,64 @@
-var names = ["I", "Like", "Learning", "New", "Things"];
+// base square styling
+var colorBox = document.createElement("div")
+colorBox.style.borderStyle = "solid";
+colorBox.style.marginTop =  '150px'
+colorBox.style.height = '250px'
+colorBox.style.width = '250px'
+colorBox.style.color = 'white'
+document.body.append(colorBox);
 
-var i;
 
-for (i = 0; i < names.length; i++) {
-    var h2 = document.createElement("h2")
-    
-    h2.textContent = names[i]
-    h2.style.fontSize = "20px";
-    h2.style.fontWeight = "lighter";
-    h2.style.fontFamily = "sans-serif"
-    h2.style.color = "cornflowerblue";
-    h2.classList.add("border");
-    document.body.append(h2)
+//mouse actions
+colorBox.addEventListener("mouseover", function() {
+colorBox.style.background = "green" 
+});
 
-}
+colorBox.addEventListener("mousedown", function() {
+colorBox.style.background = "yellow" 
+});
+
+colorBox.addEventListener("mouseup", function() {
+colorBox.style.background = "blue" 
+});
+
+colorBox.addEventListener("dblclick", function() {
+colorBox.style.background = "red" 
+});
+
+document.body.addEventListener("wheel", function() {
+colorBox.style.background = "purple" 
+});
+
+// onload option
+document.body.addEventListener("onload", onload = function() {
+colorBox.style.background = "black" 
+});
+
+//key push functions
+document.addEventListener("keydown", function(event) {
+    var x = event.key;
+    if (x === "g") {
+        colorBox.style.background = "green"
+    }
+    else if (x === "o") {
+        colorBox.style.background = "orange"
+    }
+    else if (x === "p") {
+        colorBox.style.background = "purple"
+    }
+    else if (x === "w") {
+        colorBox.style.background = "white"
+    }
+    else if (x === "B") {
+        colorBox.style.background = "black" // Had to make blacks action key Uppercase becouse of blue
+    }
+    else if (x === "b") {
+        colorBox.style.background = "blue"
+    }
+    else if (x === "y") {
+        colorBox.style.background = "yellow"
+    }
+    else if (x === "r") {
+        colorBox.style.background = "red"
+    }
+});
