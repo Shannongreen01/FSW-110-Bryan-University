@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>
+    <form id="formInfo">
+        <br><br>
+        <label for="firstName">First Name</label>
+        <br>
+        <input type="text" name="firstName" placeholder="First Name">
+        <br><br>
+        <label for="lastName">Last Name</label>
+        <br>
+        <input type="text" name="lastName" placeholder="Last Name">
+        <br><br>
+        <label for="age">Age</label>
+        <br>
+        <input type="text" name="age" placeholder="Age">
+        <br><br>
+        <label for="option">Have you ever shoped with us?</label>
+        <br>
+        Yes <input type="radio" name="radio1" value="Yes" id="Yes">
+        no <input type="radio" name="radio1" value="No" id="No">
+        <br><br>
+        <label for="option2"> How likely are you to recommend this product to a friend?</label>
+        <br>
+        <select name="option2">
+            <option value="NotLikely">Not Likely</option>
+            <option value="somewhatlikely">Somewhat Likely</option>
+            <option value="likely">Likely</option>
+        </select>
+        <br><br>
+        <label for="option3">Select All Dietary Restrictions?</label>
+        <br><br>
+        Vegetarian <input class="option3" type="checkbox" name="vegetarian" id="vegetarian" value="Vegetarian">
+        Dairy Free <input class="option3" type="checkbox" name="dairyFree" id="dairyFree" value="Dairy Free">
+        Gluten Free <input class="option3" type="checkbox" name="glutenFree" id="glutenFree" value="Gluten Free">
+        <br><br>
+        <button type="button" id="submit">Submit</button>
+    </form>
+    </div>
+    <script src="SCRIPT.js"></script>
+</body>
+</html>
